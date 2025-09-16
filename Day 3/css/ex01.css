@@ -1,0 +1,46 @@
+/* p {
+  color: blueviolet;
+}
+h2 {
+  color: brown;
+  background: yellow;
+} */
+
+/* Dùng cho tất cả các thẻ */
+/* * {
+  color: red;
+} */
+/* # dùng cho id */
+/* #title {
+  color: blue;
+  background: wheat;
+} */
+/* dùng cho class */
+/* .title {
+  color: red;
+} */
+/* dùng cho các thẻ không có id hay clss */
+/* h3 {
+  color: orange;
+} */
+
+/* .box .title {
+  color: pink;
+}
+.wrapper .title {
+  color: aqua;
+} */
+
+/* .box > .title {
+  color: blueviolet;
+} */
+
+/* Chỉ các Item 1 2 3 4 5 đổi màu */
+/* .menu > li > a {
+  color: red;
+} */
+
+/* Tính từ ul thứ 2  */
+.menu ul a {
+  color: aquamarine;
+}

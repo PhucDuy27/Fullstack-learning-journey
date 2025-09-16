@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Thẻ Form thì phải ngang hàng không được đặt form lồng vào nhau -->
+    <h1>HTML FORM</h1>
+    <!-- Nếu method là GET thì dữ liệu sẽ được đẩy lên serve còn POST thì không -->
+    <!-- Tìm kiếm thì dùng GET để có thể chia sẽ đường link -->
+    <!-- Thẻ action chỉ định URL/địa chỉ mà dữ liệu form sẽ được gửi đến khi submit.
+Nếu bỏ trống (action="") → dữ liệu sẽ gửi đến chính trang hiện tại. -->
+    <!-- Thẻ method để chỉ định HTTP -->
+    <form action="" method="">
+      <div>
+        <!-- Thẻ label có thuộc tính for-forcus xuất hiện viền đen outline-->
+        <label for="fullname">Fullname</label>
+        <!-- Thẻ input có thuộc tính text có thể nhập mọi dữ liệu và name là thuộc tính di nhất, placeholer là thuộc tính tạm thời -->
+        <!-- Thuộc tính value là để set giá trị mặc định -->
+        <!-- Thuộc tính disabled thì giá trị bằng chính nó nên không cần-vô hiệu hóa trường không tồn tại nhưng giao diện vẫn nhìn thấy nó -->
+        <!-- Thuộc tính readonly serve vẫn đọc dược dữ liệu -->
+        <!-- Thuộc tính required bắt buộc phải nhập -->
+        <!-- Thuộc tính maxlength số ký tư tối đa được nhập -->
+        <input
+          type="text"
+          name="Fullname"
+          placeholder="Vui lòng nhập họ và tên"
+          id="fullname"
+          value=""
+          disabled
+          readonly
+          required
+          maxlength="10"
+        />
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Vui lòng nhập đúng email"
+          id="email"
+          value=""
+        />
+      </div>
+
+      <!-- Trường password giúp chỉ hiển thị dấu . cho mật khẩu -->
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Vui lòng nhập mật khẩu"
+          id="password"
+          value=""
+        />
+      </div>
+
+      <div>
+        <!-- Trường number chỉ nhập được số và ký tự e hằng số đặc biệt và dấu -+ -->
+        <!-- Thuộc tính min max để xét giá trị ngưỡng number -->
+        <!--Thuộc tính step để điều chỉnh bước nhảy -->
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          placeholder="Vui lòng nhập tuổi"
+          id="age"
+          value=""
+          min="10"
+          max="50"
+          step="2"
+        />
+      </div>
+
+      <div>
+        <!-- Thuộc tính multiple chọn nhiều file -->
+        <label for="avatar">Avatar</label>
+        <input type="file" name="avatar" id="avatar" multiple />
+      </div>
+      <div>
+        <label>Giới tính</label>
+        <!-- Trường radio chỉ chọn được 1 -->
+        <!-- Đặt trong label thì không còn for còn nếu đặt ngoài thì cần for -->
+        <!-- Đặt name cùng tên để hiểu chỉ chọn 1 trong nhóm cùng tên -->
+        <!-- Thuộc tính value để đẩy dữ liệu lên server -->
+        <!-- Thuộc tính checked sẽ tự động chọn -->
+        <label>
+          <input type="radio" name="gender" value="unknown" />Không biết
+        </label>
+        <label>
+          <input type="radio" name="gender" value="male" checked />Nam
+        </label>
+        <label> <input type="radio" name="gender" value="female" />Nữ </label>
+      </div>
+
+      <div>
+        <label>Nguồn</label>
+        <!-- Trường checkbox chỉ chọn được nhiều -->
+        <label>
+          <input
+            type="checkbox"
+            name="source"
+            value="facebook"
+            checked
+          />Facebook
+        </label>
+        <label>
+          <input type="checkbox" name="source" value="google" checked />Google
+        </label>
+        <label>
+          <input type="checkbox" name="source" value="website" />Website
+        </label>
+      </div>
+
+      <div>
+        <label for="province">Tỉnh/Thành phố</label>
+        <label>
+          <!-- Chọn theo danh sách -->
+          <!-- Thuộc tính selected vào thẻ option mình muốn để chọn mặc định ban đầu -->
+          <!-- Thuộc tính multiple để chọn nhiều cái -->
+          <select name="province" id="province" multiple>
+            <option value="0">Chọn Tỉnh/Thành phố</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Đà Nẵng</option>
+            <option value="3">Bình Định</option>
+            <option value="4">Hồ Chí Minh</option>
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label for="message">Tin nhắn</label>
+        <!-- Thuộc tính row chỉ định số dòng -->
+        <!-- Thuộc cols -->
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Tin nhắn...."
+          cols="40"
+          row="5"
+        ></textarea>
+      </div>
+      <!-- Bắt buộc từ hai trường trở lên thì phải có button -->
+      <!-- Mặc định thẻ button là Submit -->
+      <button type="submit">Submit</button>
+      <!-- Button bấm vào không có tác dụng gì cả -->
+      <button type="button">Button</button>
+      <!-- Hạn chế không dùng -->
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h2 span {
+        color: red;
+        font-style: itallic;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tạo ảnh -->
+    <img
+      src="https://fastly.picsum.photos/id/408/1000/400.jpg?hmac=ysVk1_bI_4KxABxGgSRAYkSI79gzs69IktMi6b45Pl0"
+      title="Ảnh 01"
+      width="1000"
+      alt="không tìm thấy ảnh"
+    />
+
+    <!-- Thẻ br để ngắt dòng văn bản -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />Officiis
+      aliquid quae itaque, vel omnis rerum sit excepturi architecto unde aut
+      minus deleniti, natus, voluptate hic nam adipisci sunt! Doloribus, quos.
+    </p>
+
+    <h2>Khóa học <span>Fullstack</span> của Duy</h2>
+    <!-- Thẻ strong dùng để nhấn mạnh -->
+    <p>Học lập trình từ con số 0 <b>với Duy</b></p>
+    <p>Học lập trình từ con số 0 <strong>với Duy</strong></p>
+    <!-- i chỉ thay đổi hình thức, em nhấn mạnh về ý nghĩa -->
+    <p>Học lập trình từ con số 0 <i>với Duy</i></p>
+    <p>Học lập trình từ con số 0 <em>với Duy</em></p>
+    <!-- ins thể hiện cái gì đó được thêm vào, u -->
+    <p>Học lập trình từ con số 0 <u>với Duy</u></p>
+    <p>Học lập trình từ con số 0 <ins>với Duy</ins></p>
+    <!-- Thẻ del thể hiện nội dung muốn xóa đi -->
+    <p>Học lập trình từ con số 0 <s>với Duy</s></p>
+    <p>Học lập trình từ con số 0 <del>với Duy</del></p>
+    <!-- Công thức toán học -->
+    <p>CO<sub>2</sub></p>
+    <p>100m<sup>2</sup></p>
+
+    <!-- Vẽ table -->
+    <table border="2" width="100%" cellspacing="1" cellpadding="5">
+      <!-- border là viền, cellspacing khoảng cách giữa các ô, cellpading khoảng cách giữa nội dung và ô -->
+      <tr>
+        <td width="5%">STT</td>
+        <!--td-table data-->
+        <td>Tên</td>
+        <td>Email</td>
+        <td width="20%">Thu nhập</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <!--td-table data-->
+        <td>Đỗ Phúc Duy</td>
+        <td>dophucduy3@gmail.com</td>
+        <td rowspan="2">100USD</td>
+        <!-- rowspan gộp hàng thì phải comment hàng dưới và span ở hàng trên -->
+      </tr>
+      <tr>
+        <td>2</td>
+        <!--td-table data-->
+        <td>Đỗ Phúc Ban</td>
+        <td>dophucduy3@gmail.com</td>
+        <!-- <td>120USD</td> -->
+      </tr>
+      <tr>
+        <td>3</td>
+        <!--td-table data-->
+        <td>Đỗ Trường Danh</td>
+        <td>danh@gmail.com</td>
+        <td>50USD</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <!--td-table data-->
+        <td>Đỗ Thị Quỳnh Như</td>
+        <td>nhudtq@gmail.com</td>
+        <td>200USD</td>
+      </tr>
+      <tr>
+        <th colspan="3">Tổng</th>
+        <!--colspan gộp cột 3 là số cột gộp-->
+        <td>470USD</td>
+      </tr>
+    </table>
+  </body>
+</html>
